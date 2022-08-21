@@ -1,0 +1,162 @@
+<!-- NOTE:
+I had first added JS Code for some animations but in real world, Gmail cannot embed script tags into its HTML.-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+<title>Email Template</title>
+<!-- IMPORTNING TAILWIND -->
+
+<!-- IMPORTING FONTS FROM GOOGLE -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<!-- IMPORTING FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+	body{
+		margin: 0;
+		background-color: #cccccc;
+		font-family: 'Roboto', sans-serif;
+		text-decoration: none;
+	}
+	#home{
+		background-color: #1A0A47;
+	}
+	#gallery,#credits{
+		background: #FFF8EB;
+	}
+	.first-half{
+		background: #1A0A47;
+	}
+	.icons i{
+		font-size: 2rem;
+	}
+
+</style>
+
+</head>
+<body>
+	<div class="email-body container md:mx-auto md:px-4">
+		<!-- START OF SECTION 1 -->
+		<section id="home" class="h-max">
+			<div class="logo-container flex items-center p-4">
+				<div class="circle bg-white w-10 h-10 border-ra rounded-full flex items-start justify-center" >
+					<div class="bg-red-400 w-4 h-4 rounded-full mt-3"></div>
+				</div>
+				<h1 class="text-white ml-4 text-2xl font-black">OpenTable</h1>
+			</div>
+			<div class="home-container mt-6">
+				<div class="home-content">
+					<h1 class="text-white text-5xl tracking-normal p-4 font-bold">Where to dine next</h1>
+					<p class="text-white leading-10 mt-8 p-4 text-lg">Keep the good meals rolling- from cuisine to neighborhood,vibe to price,these restaurants have a lot of places
+						you have visited in the past
+					</p>
+					<button class="bg-yellow-50 p-4 rounded-lg m-6 font-medium hover:bg-white">See Your Recommendations</button>
+					<img class="w-full"src="https://cdn.discordapp.com/attachments/958066866318876694/1010817070088339496/Screenshot_2022-08-21_130821.png" alt="">
+				</div>
+			</div>
+		</section>
+		<!-- END OF SECTION 1 -->
+
+		<!-- START OF SECTION 2 -->
+		<section id="gallery" class="h-max">
+			<div class="food-container">
+				<div class="row flex flex-col items-center sm:flex-row sm:justify-around">
+					<div class="card mt-6">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010820806433050664/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">Urban Grub</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Nashville</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+					<div class="card mt-6">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010822998560866344/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">The Stillery</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Downtown</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+				</div>
+
+				<div class="row flex flex-col items-center sm:flex-row sm:justify-around">
+					<div class="card mt-6">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010823697340305438/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">Adele's</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Glutch</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+					<div class="card mt-6">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010823961615028224/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">Lola</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Nashville</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+				</div>
+
+				<div class="row flex flex-col items-center sm:flex-row sm:justify-around">
+					<div class="card mt-6 pb-10">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010825530150490152/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">Church Union</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Nashville</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+					<div class="card mt-6 pb-10">
+						<img class="w-48 mb-4 rounded-lg shadow-2xl"src="https://cdn.discordapp.com/attachments/958066866318876694/1010825620592263258/unknown.png" alt="">
+						<h2 class="font-bold text-xl mb-4">The optimist</h2>
+						<p class="font-medium"><i class="fa fa-map-marker mr-2 mb-2"></i>Germantown</p>
+						<a class="text-red-600" href="/">Reserve ></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END OF SECTION 2 -->
+
+		<!-- START OF SECTION 3 -->
+		<section id="promotion" class="text-white">
+			<div class="first-half p-6">
+				<h1 class="text-4xl font-bold pt-5">Find more of what you like, served up just for you.</h1>
+				<button class="bg-transparent border-2 rounded-md p-4 mt-6">See all your recs</button>
+			</div>
+			<div class="second-half bg-red-500 p-12 flex items-center text-center pt-10">
+				<p class="text-lg">Get Personalized Recomendations and discover the best dining options for every mood, craving and occasions with a few taps.</p>
+			</div>
+		</section>
+		<!-- END OF SECTION 3 -->
+
+
+	<!-- START OF SECTION 4 -->
+	<section class="h-max pt-10 p-4" id="credits">
+		<div class="app-container flex items-center">
+			<div>
+				<div class="circle bg-red-500 w-10 h-10 border-ra rounded-full flex items-start justify-center mr-4" >
+					<div class="bg-white w-4 h-4 rounded-full mt-3"></div>
+				</div>
+			</div>
+			<div class="flex items-center justify-between">
+				<p class="font-bold text-red-500 text-lg">Get our mobile app</p>
+				<img class="w-40" src="https://cdn.discordapp.com/attachments/958066866318876694/1010841578979459154/appleplay.png" alt="">
+			</div>
+		</div>
+		<div class="icons mt-5">
+			<a class="mr-4" href="/"><i class="fa fa-facebook-official text-9xl text-red-600"></i></a>
+			<a class="mr-4" href="/"><i class="fa fa-twitter text-4xl text-red-600"></i></a>
+			<a class="" href="/"><i class="fa fa-instagram text-4xl text-red-600"></i></a>
+		</div>
+		<div class="credit-text">
+			<p class="font-bold">Update Your Profile •Unsubsrcibe</p>
+			<p class="mt-4 text-sm">1 Montogomery Street, Suit 700 •San Francisco, CA - 94104</p>
+			<p class="text-sm mt-4">www.opentable.com</p>
+			<p class="text-sm mt-4"><i class="fa fa-map-marker mr-3 text-red-600"></i>Nashville</p>
+			<p class="text-sm mt-4">Have questions?Visit community.opentable.com</p>
+			<p class="text-sm mt-4">Are you a restauranteur? See what OpenTable can do for you</p>
+			<p class="text-sm mt-4 pb-5">©2022 OpenTable,Inc. All rights reserved</p>
+
+		</div>
+	</section>
+	<!-- END OF SECTION 4 -->
+	</div>
+
+</body>
+</html>
